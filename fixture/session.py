@@ -7,7 +7,7 @@ class SessionHelper():
 
     @property
     def logged_user_name(self):
-        return self.app.wd.find_element_by_css_selector("span.user-info")
+        return self.app.wd.find_element_by_css_selector(".user-info")
 
     def open_homepage(self):
         wd = self.app.wd
